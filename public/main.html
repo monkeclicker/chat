@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie's Chat App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid" id="containerMain">
+        <div class="row">
+            <div class="col-2" id="col1">
+                <h2 id="usersOnline">Users Online</h2>
+                <h3>IN PROGRESS</h3>
+            </div>
+            <div class="col-10">
+                <div id="mainRow">
+                    <h1 class="text-center">Charlie's Chat App</h1>
+                    <div id="message-container"></div>
+                    <form id="send-container">
+                        <input type="text" id="message-input">
+                        <button type="submit" id="send-button">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
