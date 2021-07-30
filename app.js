@@ -6,6 +6,7 @@ const socketio = require('socket.io');
 const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
+require('dotenv').config();
 
 const port = process.env.PORT || 3000
 const users = {}
