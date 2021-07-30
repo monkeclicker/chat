@@ -35,7 +35,7 @@ sendContainer.addEventListener('submit', e => {
     }
 
     const message = messageInput.value
-    appendMessage(`You ${message}`)
+    appendMessage(`You | ${message}`)
     socket.emit('chat-message', message)
     messageInput.value = ''
 })
